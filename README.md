@@ -1,4 +1,4 @@
-# Welcome to Hyun Mog Kim's Space!
+# Welcome to Hyun Mog Kim (HMK)'s Space!
 
 ## 📐 The HMK Space
 
