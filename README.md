@@ -1,9 +1,9 @@
 # Welcome to Hyun Mog Kim's Space!
 
-## 📐 The Kim Space
+## 📐 The HMK Space
 
 > [!IMPORTANT]
-> **Definition (Kim Space).** A *Kim space* is a 5-tuple $(\mathcal{M}, g, \mathcal{G}, \nabla, \varphi)$ where:
+> **Definition (HMK Space).** A *Kim space* is a 5-tuple $(\mathcal{M}, g, \mathcal{G}, \nabla, \varphi)$ where:
 >
 > - $\mathcal{M}$ is a **Riemannian manifold** of problems worth solving.
 > - $g$ is a **metric** that measures the distance between curiosity and understanding.
@@ -11,4 +11,4 @@
 > - $\nabla$ is a **connection** that transports ideas across disciplines via parallel transport.
 > - $\varphi: \mathcal{M} \times [0,1] \to \mathcal{M}$ is a **diffusion process** such that $\lim_{t \to 1} \varphi(\cdot, t)$ converges to structured solutions.
 >
-> A Kim space is said to be **complete** if every Cauchy sequence of hard problems admits a limit in $\mathcal{M}$.
+> A HMK space is said to be **complete** if every Cauchy sequence of hard problems admits a limit in $\mathcal{M}$.
