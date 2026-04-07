@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog &middot; Hyun Mog Kim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="index.html" class="nav-logo">HMK<span>.</span></a>
+        <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+        <div class="nav-links">
+            <a href="index.html#education">Education</a>
+            <a href="index.html#research">Research</a>
+            <a href="index.html#experience">Experience</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="blog.html">Blog</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<section style="padding-top: 8rem;">
+    <div class="container">
+        <p class="section-label">Blog</p>
+        <h2 class="section-title">Notes &amp; Thoughts</h2>
+        <p style="color: var(--text-muted); margin-bottom: 2.5rem; max-width: 640px;">
+            An informal log of things I'm studying — papers, math, ML, and the occasional half-formed thought.
+        </p>
+        <div id="post-list" class="edu-list"></div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Hyun Mog Kim</p>
+    </div>
+</footer>
+
+<script>
+fetch('posts/index.json')
+    .then(r => r.json())
+    .then(posts => {
+        const list = document.getElementById('post-list');
+        if (!posts.length) {
+            list.innerHTML = '<p style="color: var(--text-dim); font-style: italic;">No posts yet — check back soon.</p>';
+            return;
+        }
+        posts.sort((a, b) => b.date.localeCompare(a.date));
+        list.innerHTML = posts.map(p => `
+            <a href="post.html?slug=${encodeURIComponent(p.slug)}" class="edu-item" style="text-decoration: none; color: inherit; cursor: pointer;">
+                <div class="edu-school">${p.title}</div>
+                <div class="edu-period">${p.date}</div>
+                <div class="edu-degree">${p.summary || ''}</div>
+            </a>
+        `).join('');
+    })
+    .catch(e => {
+        document.getElementById('post-list').innerHTML = '<p style="color: var(--text-dim);">Could not load posts.</p>';
+    });
+</script>
+
+</body>
+</html>
