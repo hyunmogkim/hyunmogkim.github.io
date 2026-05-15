@@ -19,7 +19,9 @@
             <a href="#education">Education</a>
             <a href="#research">Research</a>
             <a href="#experience">Experience</a>
+            <a href="#advisory">Advisory</a>
             <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="blog.html">Blog</a>
             <a href="#contact">Contact</a>
         </div>
@@ -31,16 +33,16 @@
     <div class="container">
         <div class="hero-inner">
             <div class="hero-content">
-            <div class="hero-tag">Machine Learning Engineer</div>
+            <div class="hero-tag">Machine Learning Research Engineer</div>
             <h1>Hyun Mog Kim</h1>
             <p class="hero-sub">
-                I am a machine learning engineer with a background in mathematics. I like building things that work end to end &mdash; and understanding why they work.
+                I am a machine learning research engineer with a foundation in pure mathematics. I care about mathematical rigour &mdash; building models from first principles, grounding design choices in analysis, and understanding <em>why</em> something works before scaling it.
             </p>
             <p class="hero-sub">
-                Over the past three years I have shipped deep learning systems across very different settings: real-time models on edge hardware under tight latency budgets, and large-scale generative pipelines for scientific applications. The thread connecting them, for me, is structure &mdash; how to encode it, how to respect it, and how to exploit it.
+                Over the past three years I have designed and shipped end-to-end deep learning systems across very different domains: real-time inference on edge hardware under tight latency budgets, and large-scale generative pipelines for drug discovery. Whether the problem calls for a new architecture or a production deployment, I approach it the same way &mdash; from the math up.
             </p>
             <p class="hero-sub">
-                These days I spend most of my time around geometric deep learning and equivariant architectures.
+                Currently I work on geometric deep learning and equivariant architectures. I am always looking for harder problems and sharper tools to solve them.
             </p>
             <div class="hero-interests">
                 <span>Mathematics</span>
@@ -70,14 +72,24 @@
 
         <div class="edu-list">
             <div class="edu-item">
-                <div class="edu-school">KAIST, Kim Jaechul Graduate School of AI</div>
+                <div class="edu-school">KAIST, Graduate School of Artificial Intelligence</div>
                 <div class="edu-period">Sep 2020 &ndash; Mar 2023</div>
-                <div class="edu-degree">MEng in Artificial Intelligence</div>
+                <div class="edu-degree">MEng in Artificial Intelligence &middot; Advisor: Juho Lee</div>
+                <div class="edu-detail">Thesis: <em>Efficient Ensemble Methods for Graph Neural Networks</em></div>
             </div>
             <div class="edu-item">
                 <div class="edu-school">Imperial College London, Department of Mathematics</div>
-                <div class="edu-period">Oct 2016 &ndash; Oct 2019</div>
-                <div class="edu-degree">BSc in Mathematics</div>
+                <div class="edu-period">Oct 2016 &ndash; Jul 2019</div>
+                <div class="edu-degree">BSc in Mathematics &middot; Advisor: Alexei Skorobogatov</div>
+            </div>
+        </div>
+
+        <p class="sub-heading" style="margin-top: 2.5rem;">Honors &amp; Awards</p>
+        <div class="edu-list">
+            <div class="edu-item">
+                <div class="edu-school">Government-Sponsored Tuition Scholarship</div>
+                <div class="edu-period">Sep 2020 &ndash; Mar 2023</div>
+                <div class="edu-degree">Awarded 3 times ($20,000 USD each)</div>
             </div>
         </div>
     </div>
@@ -94,9 +106,25 @@
         <p class="sub-heading">Publications</p>
         <div class="pub-list" style="margin-bottom:2.5rem;">
             <div class="pub-card">
-                <div class="pub-venue">ICML 2026 &middot; Submitted</div>
-                <div class="pub-title">Inverse Folding Model for Antibody Sequence Design</div>
-                <div class="pub-authors"><span class="me">Hyunmog Kim</span>, Injae Chung, Junsu Ko, Juyong Lee</div>
+                <div class="pub-venue">NeurIPS 2026 &middot; Under Review</div>
+                <div class="pub-title">CDR-IF: Prior-Residual Fusion for Antigen-Conditioned CDR Inverse Folding</div>
+                <div class="pub-authors"><span class="me">Hyunmog Kim</span>, Junsu Ko, Injae Chung, Juyong Lee</div>
+            </div>
+            <div class="pub-card">
+                <div class="pub-venue">NeurIPS 2026 &middot; Under Review</div>
+                <div class="pub-title">Diagnosing Spectral Ceilings in Equivariant Neural Force Fields</div>
+                <div class="pub-authors"><span class="me">Hyunmog Kim</span></div>
+            </div>
+            <div class="pub-card">
+                <div class="pub-venue">Preprint &middot; 2026</div>
+                <div class="pub-title">Graph Computation Meets Circuit Algebra: A Task-Aligned Analysis of Graph Neural Networks for Electronic Design Automation</div>
+                <div class="pub-authors"><span class="me">Hyunmog Kim</span></div>
+            </div>
+            <div class="pub-card">
+                <div class="pub-venue">PEGS Europe 2025 &middot; Poster</div>
+                <div class="pub-title">Allomorphic-ANTIBODY: An End-to-End In Silico Framework for Rational Antibody Design</div>
+                <div class="pub-authors">Injae Chung*, Yiyu Hong*, <span class="me">Hyunmog Kim*</span>, Alex Bui*, Juyong Lee, Junsu Ko</div>
+                <div class="pub-note">*Equal contribution</div>
             </div>
         </div>
 
@@ -126,19 +154,76 @@
 
         <div class="exp-list">
             <div class="exp-item">
+                <div class="exp-role">Industry-Sponsored Visiting Scholar</div>
+                <div class="exp-period">Feb 2026 &ndash; May 2026</div>
+                <div class="exp-org">Structured and Probabilistic Machine Learning (SPML) Lab, KAIST</div>
+                <ul class="exp-bullets">
+                    <li>Developing SigmaFlex, a fragment-based diffusion framework for molecular docking that models small molecule flexibility on Riemannian manifolds.</li>
+                </ul>
+            </div>
+            <div class="exp-item">
                 <div class="exp-role">Machine Learning Research Engineer</div>
                 <div class="exp-period">Nov 2024 &ndash; Present</div>
                 <div class="exp-org">Arontier &middot; Seoul, South Korea</div>
+                <ul class="exp-bullets">
+                    <li>Architected an end-to-end de novo antibody redesign pipeline, independently developing deep learning models integrated with custom ranking logic (20% average wet-lab success rate).</li>
+                    <li>Scaled training of antibody backbone generation and antigen-antibody complex structure prediction models (&gt;400M parameters) across a 32-GPU cluster (4 nodes, 8&times;NVIDIA B200).</li>
+                    <li>Engineered an LLM-driven data pipeline to mine patents and scientific literature, constructing a proprietary Antibody-Drug Conjugate (ADC) database.</li>
+                </ul>
             </div>
             <div class="exp-item">
                 <div class="exp-role">Machine Learning Research Engineer</div>
                 <div class="exp-period">Mar 2023 &ndash; Nov 2024</div>
                 <div class="exp-org">DeltaX &middot; Seoul, South Korea</div>
+                <ul class="exp-bullets">
+                    <li>Engineered an end-to-end MLOps pipeline for ADAS (Hyundai) and Smart Factory (KIA) PoCs, reducing model development cycles by 80% and reducing latency by 100&times; (1.0s to 0.01s).</li>
+                    <li>Rearchitected neural network layers for edge SDK compliance (Renesas V3H, NVIDIA Jetson), applying quantization and pruning to accelerate inference throughput from 7 to 25 FPS.</li>
+                </ul>
+            </div>
+            <div class="exp-item">
+                <div class="exp-role">Student Researcher</div>
+                <div class="exp-period">Sep 2020 &ndash; Mar 2023</div>
+                <div class="exp-org">Statistical Inference and Machine Learning (SIML) Lab, KAIST</div>
+                <ul class="exp-bullets">
+                    <li>Studied Bayesian inference and probabilistic modeling, including Gaussian Processes for uncertainty quantification and neural network ensembling methods.</li>
+                    <li>Explored equivariant neural networks under the lab&rsquo;s broader program on symmetry-aware learning and robust representation design.</li>
+                </ul>
+            </div>
+            <div class="exp-item">
+                <div class="exp-role">Senior Tutor</div>
+                <div class="exp-period">Jul 2016 &ndash; Sep 2020</div>
+                <div class="exp-org">Cambridge Education Center &middot; Remote</div>
+                <ul class="exp-bullets">
+                    <li>Directed comprehensive STEM admissions strategies and instructed advanced Mathematics and Physics, driving rapid grade improvements (&gt;15% in 60 days) and achieving a &gt;95% placement rate into global top-50 universities.</li>
+                </ul>
             </div>
         </div>
         <p style="font-size: 0.78rem; color: var(--text-dim); font-style: italic; margin-top: 1.25rem;">
-            Roles from Mar 2023 to Mar 2026 fulfilled Korea&rsquo;s alternative military service (3-year mandatory service in designated domestic research positions).
+            Research roles from Mar 2023 to Mar 2026 concurrently fulfilled South Korea&rsquo;s 3-year mandatory military service via designated national technical directives.
         </p>
+    </div>
+</section>
+
+<div class="container"><hr class="divider"></div>
+
+<!-- Advisory -->
+<section id="advisory">
+    <div class="container">
+        <p class="section-label">Advisory</p>
+        <h2 class="section-title">Consulting &amp; Advisory</h2>
+
+        <div class="exp-list">
+            <div class="exp-item">
+                <div class="exp-role">Technical Advisor</div>
+                <div class="exp-period">Jishin</div>
+                <div class="exp-org">Advised on computer vision systems for automated defect detection and human safety monitoring in smart factory environments.</div>
+            </div>
+            <div class="exp-item">
+                <div class="exp-role">Industry Consultant</div>
+                <div class="exp-period">Hanson Wade</div>
+                <div class="exp-org">Assessed emerging technologies and market dynamics in South Korean in silico drug discovery for a global life sciences intelligence firm.</div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -170,6 +255,37 @@
                 <div class="edu-school">The Finite Geometry on the Fano Plane</div>
                 <div class="edu-period">Imperial, 2017</div>
                 <div class="edu-degree">Undergraduate project on incidence structures and projective planes.</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container"><hr class="divider"></div>
+
+<!-- Skills -->
+<section id="skills">
+    <div class="container">
+        <p class="section-label">Skills</p>
+        <h2 class="section-title">Technical Stack</h2>
+
+        <div class="skills-grid">
+            <div class="skill-group">
+                <div class="skill-label">Languages</div>
+                <div class="skill-tags">
+                    <span>Python</span><span>Matlab</span><span>R</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Core Libraries</div>
+                <div class="skill-tags">
+                    <span>PyTorch</span><span>PyTorch Lightning</span><span>PyG</span><span>SciPy</span><span>Matplotlib</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <div class="skill-label">Infrastructure</div>
+                <div class="skill-tags">
+                    <span>Slurm</span><span>Docker</span><span>Git/GitHub</span><span>Linux</span><span>Vim</span><span>W&amp;B</span><span>Hydra</span>
+                </div>
             </div>
         </div>
     </div>
